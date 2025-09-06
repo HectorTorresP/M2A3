@@ -1,0 +1,80 @@
+    <!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <title>Mi Sitio</title>
+    <style>
+        body { 
+            font-family: system-ui, sans-serif; 
+            max-width: 900px;
+            margin: 2rem auto; 
+            line-height: 1.5; 
+        } 
+        header, nav, main, aside, footer, article, section {
+            padding: 12px; 
+            border: 1px solid #ddd; 
+            margin-bottom: 12px; 
+            border-radius: 8px;
+        }
+        nav a { 
+            margin-right: 8px; 
+            text-decoration: none; 
+            color: #2a7ae2; 
+        }
+        nav a:hover { text-decoration: underline; }
+        .label { 
+            font-weight: bold; 
+            color: #2a7ae2; 
+        } 
+        blockquote { 
+            font-style: italic; 
+            color: #555; 
+            margin: 12px 0; 
+            padding-left: 12px;
+            border-left: 3px solid #ccc;
+        } 
+        time { color: #666; font-size: 0.9em; }
+        address a { color: #2a7ae2; text-decoration: none; }
+    </style>
+</head>
+<body>
+<header>
+    <h1>Mi Blog Personal</h1>
+    <nav aria-label="Menú principal">
+        <a href="#">Inicio</a>
+        <a href="#">Articulos</a>
+        <a href="#">Contacto</a>
+    </nav>
+</header>
+
+<main>
+    <article>
+        <h2>Novedades de HTML5</h2>
+        <div class="date">
+            <time datetime="2024-12-20">Publicado el 20/12/2024</time>
+        </div>
+        <p>HTML5 trae nuevas etiquetas <em>muy interesantes</em> para mejorar la web.</p>
+        <blockquote>
+            <cite>Stephen King</cite>: "a uniquely portable magic"
+        </blockquote>
+        <p><span class="label">URL:</span> <a href="https://www.example.com">https://www.example.com</a></p>
+        <p>Visita a la <abbr title="World Health Organization">WHO</abbr> para más información.</p>
+    </article>
+</main>
+
+<aside>
+    <div class="box">
+        <div class="label">Acerca de</div>
+        ...
+    </div>
+    <div class="box">
+        <div class="label">Contacto</div>
+        <p><span class="label">Email:</span> contacto@ejemplo.com</p>
+    </div>
+</aside>
+<footer>
+    <div>© 2025 Mi Sitio</div>
+    <div>Hecho con <em>café</em> y paciencia.</div>
+</footer>
+</body>
+</html>
